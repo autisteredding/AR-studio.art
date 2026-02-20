@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR-STUDIO | Neon Protocol</title>
+    <meta name="description" content="AR-STUDIO | Direction Artistique, Graphisme & Chaos par Gaël Périer.">
+    <meta name="keywords" content="Gaël Périer, AR-STUDIO, Direction Artistique, Graphisme, Clips, Lynchian Design">
+
+    <meta property="og:title" content="AR-STUDIO | SECTOR-04">
+    <meta property="og:description" content="Entrez dans le cockpit. 🛸">
+    <meta property="og:image" content="https://ar-studio.art/assets/preview-card.jpg">
+    <meta property="og:url" content="https://ar-studio.art">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23000%22/><text x=%2250%22 y=%2250%22 font-family=%22monospace%22 font-weight=%22bold%22 font-size=%2260%22 fill=%22%23d4af37%22 text-anchor=%22middle%22 dominant-baseline=%22central%22>AR</text></svg>">
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23000000%22/><text x=%2250%22 y=%2250%22 font-family=%22monospace%22 font-weight=%22bold%22 font-size=%2260%22 fill=%22%23ff0055%22 text-anchor=%22middle%22 dominant-baseline=%22central%22 transform=%22translate(-2,0)%22>AR</text><text x=%2250%22 y=%2250%22 font-family=%22monospace%22 font-weight=%22bold%22 font-size=%2260%22 fill=%22%2300f3ff%22 text-anchor=%22middle%22 dominant-baseline=%22central%22 transform=%22translate(2,0)%22 style=%22mix-blend-mode:screen%22>AR</text></svg>">
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+      { "imports": { "three": "https://unpkg.com/three@0.150.1/build/three.module.js" } }
+    </script>
+</head>
+<body>
+
+    <div id="canvas-container"></div>
+    <div class="scanlines"></div>
+
+    <div id="splash-screen">
+        <div class="logo-container">
+            <div class="rgb-bars">
+                <div class="bar bar-red"></div>
+                <div class="bar bar-green"></div>
+                <div class="bar bar-blue"></div>
+            </div>
+            <div class="logo-text">AR STUDIO</div>
+        </div>
+    </div>
+
+    <div id="intro-overlay">
+        <div class="cyber-frame">
+            <div class="header-status">SYSTEM_READY // WAITING_INPUT</div>
+            <h1 class="glitch-title" data-text="REALITY_CHECK">REALITY_CHECK</h1>
+            
+            <div class="choices-container">
+                <button id="btn-danger" class="neon-btn btn-red"><span>CHAOS</span></button>
+                <button id="btn-zen" class="neon-btn btn-cyan"><span>ORDER</span></button>
+            </div>
+
+            <button id="btn-access" class="access-link">[ SAFE_MODE / ACCESSIBILITY ]</button>
+        </div>
+    </div>
+
+    <main id="main-interface" style="display: none;">
+        <header>
+            <div class="top-logo">AR_STUDIO<span class="blink">_</span></div>
+        </header>
+
+        <section id="gallery-section">
+            <div class="grid-container" id="project-grid"></div>
+        </section>
+    </main>
+
+    <section class="room active" data-name="GRAPHISME">
+        <div class="content">
+            <h1 class="glitch-title">SECTEUR_01: GRAPHISME</h1>
+            <div class="bio-box">
+                <p class="typewriter">
+                    Directeur Artistique. <br>
+                    Production de designs graphiques en tout genre. <br>
+                    En très peu de temps, je relève vos défis graphiques <br>
+                    pour un résultat à la hauteur, voire plus. <br>
+                    <span class="highlight">Couteau Suisse graphique en quelque sorte.</span>
+                </p>
+            </div>
+            <div class="scroll-hint">↓ EXPLORER LES ARCHIVES ↓</div>
+        </div>
+    </section>
+
+    <div id="lynch-room">
+        <div class="void-bg"></div>
+        <div class="floor"></div>
+        
+        <div id="video-injector" class="video-frame-container glitch-border-white"></div>
+
+        <button id="exit-lynch">DISCONNECT</button>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
+
