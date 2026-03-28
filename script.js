@@ -25,7 +25,6 @@ const photosColor = [
     { title: "TITRE DE TA PHOTO F", img: "image-color-6.jpg" },
     { title: "TITRE DE TA PHOTO G", img: "image-color-7.jpg" },
     { title: "TITRE DE TA PHOTO H", img: "image-color-8.jpg" },
-    { title: "TITRE DE TA PHOTO I", img: "image-color-9.jpg" },
     { title: "TITRE DE TA PHOTO F", img: "image-color-10.jpg" },
     { title: "TITRE DE TA PHOTO G", img: "image-color-11.jpg" },
     { title: "TITRE DE TA PHOTO H", img: "image-color-12.jpg" },
@@ -37,7 +36,7 @@ const photosColor = [
 // --- CONFIGURATION ---
 const projects = [
     { title: "SEXY TEACHER", artist: "the LANSKIES", img: "https://i.ibb.co/G1cDH4p/8CNoqbsg.jpg?w=600&q=80", color: "#821887", videoId: "eK8qzE8jpso", ratio: "16/9", type: "FX" },
-    { title: "HOLDING TIME", artist: "Mô'Ti Tëi", img: "https://i.ibb.co/m5C01vdG/holding-time-image-site-vitrine.jpg?w=600&q=80", color: "#f46c31", videoId: "CJizKNLJL1Q", ratio: "16/9", type: "Réalisation" },
+    { title: "HOLDING TIME", artist: "Mô'Ti Tëi", img: "https://i.ibb.co/m5C01vdG/holding-time-image-site-vitrine.jpg?w=600&q=80", color: "#f46c31", videoId: "urUT_YoDZDo", ratio: "16/9", type: "Réalisation" },
     { title: "TROUS DE BALKANY", artist: "FEU ROUGE", img: "https://i.ibb.co/mF4m3Z2Z/Screenshot-528.jpg?w=600&q=80", color: "#ff0055", videoId: "NUNO_bgUTkc", ratio: "16/9", type: "Réalisation" }
 ];
 
